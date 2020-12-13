@@ -9,6 +9,8 @@ const path = require('path');
 app.use(express.urlencoded({ extended: true }));
 // parse incoming JSON data
 app.use(express.json());
+//to have css and js in html files 
+app.use(express.static('public'));
 
 
     app.get('/api/animals', (req, res) => {
@@ -40,6 +42,19 @@ app.use(express.json());
           res.json(animal);
         }
       });
+
+      app.get('/', (req, res) => {
+        res.sendFile(path.join(__dirname, './public/index.html'));
+      });
+
+      app.get('/animals', (req, res) => {
+        res.sendFile(path.join(__dirname, './public/animals.html'));
+      });
+      
+      app.get('/zookeepers', (req, res) => {
+        res.sendFile(path.join(__dirname, './public/zookeepers.html'));
+      });
+
 function findById(id, animalsArray) {
   const result = animalsArray.filter(animal => animal.id === id)[0];
   return result;
