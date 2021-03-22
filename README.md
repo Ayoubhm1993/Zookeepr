@@ -22,13 +22,14 @@
   
   Type npm install in your Terminal
   
-  then run server.js
+  then run : npm start
 
-  Otherwise visit the deployed application : https://ayoubhm1993.github.io/photo-port/
+  Otherwise visit the deployed application : 
+
 
   # Usage :
 
-coming soon
+  ![ZooKeepr](https://user-images.githubusercontent.com/70945176/112062047-5c1b1500-8b2d-11eb-960e-cda72a556851.JPG)
 
 
   # Contributor :
@@ -38,10 +39,6 @@ coming soon
   # License :
 
   Mit License
-
-  # Test :
-
-https://ayoubhm1993.github.io/photo-port/
 
   # Built :
 
